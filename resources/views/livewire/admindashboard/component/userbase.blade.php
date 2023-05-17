@@ -4,8 +4,10 @@
     <div class="d-flex align-items-stretch">
         <!-- Sidebar Navigation-->
         @livewire('admindashboard.component.navbar')
-        @livewire('admindashboard.component.bettingpanel')
+        <!-- All Users Table // after sign up -->
+        @livewire('admindashboard.component.alluserlists')
+
     </div>
 </div>
 
-{{-- This is the base of====>>>>>>>  B A T T I N G --  P A N E L --}}
+{{-- This is the base of====>>>>>>>  A L L - USERS - L I S T S --}}

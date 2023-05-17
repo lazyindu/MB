@@ -329,8 +329,8 @@
                         <li class="list-inline-item"><i class="fas fa-code-branch me-2"></i>90 wins</li>
                         <li class="list-inline-item">
                           <div class="d-flex flex-sm-column justify-content-between align-items-center ">
-                            <div class="h2"><i class="fas fa-wallet text-success  me-2"></i>999</div>
-                            <div class="h4 ms-3"><i class="fa fa-bolt text-warning  me-2"></i>100</div>
+                            <div class="h2"><i class="fas fa-wallet text-success  me-2"></i>999  <!-- This is Current Balance --> </div>
+                            <div class="h4 ms-3"><i class="fa fa-bolt text-warning  me-2"></i>100  <!-- This is StartUp amountt--> </div>
                           </div>
                         </li>
                       </ul>
@@ -545,7 +545,7 @@
 <footer class="position-absolute bottom-0 bg-dash-dark-2 text-white text-center py-3 w-100 text-xs" id="footer">
   <div class="container-fluid text-center">
     <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-    <p class="mb-0 text-dash-gray">2021 &copy; Your company. Design by <a href="https://bootstrapious.com">Bootstrapious</a>.</p>
+    <p class="mb-0 text-dash-gray">2021 &copy; Money Bazaar. All rights reserved.</p>
   </div>
 </footer>
 </div>

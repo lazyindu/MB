@@ -16,5 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('adminDashboard');
+    return view('adminpanel.bettingPanel');
+});
+Route::get('/allusers', function () {
+    return view('adminpanel.allUserListPanel');
+});
+Route::get('/bettingrecords', function () {
+    return view('adminpanel.bettingRecordsPanel');
 });

@@ -7,7 +7,7 @@
       </div>
     </div><span class="text-uppercase text-gray-600 text-xs mx-3 px-2 heading mb-2">Main</span>
     <ul class="list-unstyled">
-          <li class="sidebar-item active"><a class="sidebar-link" href="index.html"> 
+          <li class="sidebar-item"><a class="sidebar-link" href="index.html"> 
                   <svg class="svg-icon svg-icon-sm svg-icon-heavy">
                     <use xlink:href="#real-estate-1"> </use>
                   </svg><span>Home </span></a></li>
