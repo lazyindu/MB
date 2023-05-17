@@ -29,7 +29,7 @@
                     <img src="https://picsum.photos/893"  class="w-full" />
                 </div>
 
-                <div class="mx-auto mt-3"><strong class="text-lg d-block"><span class="text-dash-color-3">Rs</span> <span class="text-success">190909</span> </strong><span class="d-block"><i class="fa fa-bolt text-warning  me-2"></i><span>Rs</span> <span class="">300</span></span></div>
+                <div class="mx-auto mt-3"><strong class="text-lg d-block"><span class="text-dash-color-3">Rs</span> <span class="">190909</span> </strong><span class="d-block"><i class="fa fa-bolt text-warning  me-2"></i><span>Rs</span> <span class="">300</span></span></div>
                 <div class="mx-auto mt-3"><strong class="text-md d-block"> <span>Wins:</span> <span> 200/210</span> </strong></div>
                 <div class="mx-auto mt-3"><strong class="text-lg d-block"> <button class="btn btn-danger">Ban User</button>  </strong></div>
               </div>
@@ -48,7 +48,7 @@
                     <img src="https://picsum.photos/893"  class="w-full" />
                 </div>
 
-                <div class="mx-auto mt-3"><strong class="text-lg d-block"><span class="text-dash-color-3">Rs</span> <span class="text-success">130900</span> </strong><span class="d-block"><i class="fa fa-bolt text-warning  me-2"></i><span>Rs</span> <span class="">300</span></span></div>
+                <div class="mx-auto mt-3"><strong class="text-lg d-block"><span class="text-dash-color-3">Rs</span> <span class="">130900</span> </strong><span class="d-block"><i class="fa fa-bolt text-warning  me-2"></i><span>Rs</span> <span class="">300</span></span></div>
                 <div class="mx-auto mt-3"><strong class="text-md d-block"> <span>Wins:</span> <span> 200/210</span> </strong></div>
                 <div class="mx-auto mt-3"><strong class="text-lg d-block"> <button class="btn btn-danger">Ban User</button>  </strong></div>
               </div>
@@ -67,7 +67,7 @@
                     <img src="https://picsum.photos/893"  class="w-full" />
                 </div>
 
-                <div class="mx-auto mt-3"><strong class="text-lg d-block"><span class="text-dash-color-3">Rs</span> <span class="text-success">120909 <!-- This is Total balance --> </span> </strong><span class="d-block"><i class="fa fa-bolt text-warning  me-2"></i><span>Rs</span> <span class="">300 <!-- This is StartUp amountt--> </span> </span></div>
+                <div class="mx-auto mt-3"><strong class="text-lg d-block"><span class="text-dash-color-3">Rs</span> <span class="">120909 <!-- This is Total balance --> </span> </strong><span class="d-block"><i class="fa fa-bolt text-warning  me-2"></i><span>Rs</span> <span class="">300 <!-- This is StartUp amountt--> </span> </span></div>
                 <div class="mx-auto mt-3"><strong class="text-md d-block"> <span>Wins:</span> <span> 200/210</span> </strong></div>
                 <div class="mx-auto mt-3"><strong class="text-lg d-block"> <button class="btn btn-danger">Ban User</button>  </strong></div>
               </div>
@@ -94,30 +94,72 @@
                   <tr>
                     <th>#</th>
                     <th>Name</th>
-                    <th>Email</th>
-                    <th>Contact</th>
-                    <th>Password</th>
-                    <th>Referral ID</th>
-                    <th>Referred By</th>
-                    <th>Status</th>
-                    <th>Upi ID</th>
+                    <th>Match Played</th>
+                    <th>Loose</th>
+                    <th>Wins</th>
+                    <th>Start Up</th>
+                    <th>Total Earned</th>
+                    <th>Recent Payout</th>
+                    <th>Available Balance</th>
                     <th>Start-Up</th>
-                    <th>Current Balance</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
                     <td>Mark Juk</td>
-                    <td><small>Otto@gmail.com</small></td>
-                    <td>780891276</td>
-                    <th>sjdhfjkd@8394</th>
-                    <th>s098jaj8</th>
-                    <th>uu9uu8</th>
-                    <th><span class="text-dash-color-3">BAN</span>/ <span class="text-success">Active</span> </th>
-                    <td>lovely@paytm</td>
-                    <td>Rs <span>100</span></td>
-                    <th class="text-success ">Rs <span>20000</span></th>
+                    <td>200 <span class=""><button class="btn btn-primary rounded-pill px-2 py-1 text-sm ">View</button></span></td>
+                    <td>20</td>
+                    <th>180</th>
+                    <th>200</th>
+                    <th>2000 
+                         <!-- Tasks Model-->
+                            <!-- Button trigger modal -->
+                            
+                    </th>
+                    <th><span class="text-dash-color-3">1900</span>  <span class="">
+                        <button class="btn btn-info rounded-pill px-2 py-1 text-sm " data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <table class="table mb-0 table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>RannDDDii</th>
+                                            <th>RannDDDii</th>
+                                            <th>RannDDDii</th>
+                                            <th>RannDDDii</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>Babita</td>
+                                            <td>Babita</td>
+                                            <td>Babita</td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    
+                        </span> 
+                    </th>
+                    <th><h4><span class="text-success">Rs</span> 2000</h4></th>
+                    <th><h4><i class="fa fa-bolt text-warning  me-2"></i>100</h4></th>
+              
                   </tr>
 
 
