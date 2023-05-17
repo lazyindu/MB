@@ -179,8 +179,9 @@
 
 <section class="pt-0">
   <div class="container-fluid">
-    <div>
-      <h2>Betting panel</h2>
+    <div class="h3  bg-dash-dark-2 w-auto rounded-xl px-5 py-2 text-center"> 
+      <svg class="svg-icon svg-icon-lg svg-icon-heavy mx-2"><use xlink:href="#sales-up-1"> </use> </svg>
+       <span class="text-dash-color-3">Live Betting panel</span>
     </div>
     <div class="row gy-4">
 
@@ -274,8 +275,6 @@
               </div>
             </div>
       </div>
-
-      
       {{-- <div class="col-lg-4">
             <!-- User block-->
             <div class="card">
@@ -295,85 +294,105 @@
             </div>
       </div> --}}
 
-      {{-- Betters List --}}
-      <div class="col-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="row gy-3 align-items-center">
-                  <div class="col-lg-4">
-                    <div class="d-flex align-items-center"><strong class="text-sm d-none d-lg-block">4th</strong><img class="avatar ms-3" src="img/avatar-1.jpg" alt="Tomas Hecktor">
-                      <div class="ms-3">
-                        <h3 class="h5 mb-0">Tomas Hecktor</h3>
-                        <p class="text-sm fw-light mb-0">@tomhecktor</p>
+{{--=========================== Betters List ==============================--}}
+      <section>
+        <div class="h3  bg-dash-dark-2 w-auto rounded-xl px-5 py-2 text-center"> 
+          <svg class="svg-icon svg-icon-lg svg-icon-heavy mx-2"><use xlink:href="#sales-up-1"> </use> </svg>
+           <span class="text-danger">Current Bet Statistics</span>
+        </div>
+        <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row gy-3 align-items-center">
+                    <div class="col-lg-3">
+                      <div class="d-flex align-items-center"><strong class="text-sm d-none d-lg-block">1st</strong><img class="avatar ms-3" src="img/avatar-1.jpg" alt="Tomas Hecktor">
+                        <div class="ms-3">
+                          <h3 class="h5 mb-0">Tomas Hecktor</h3>
+                          <p class="text-sm fw-light mb-0">@gmail.com</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4 text-center">
-                    <div class="d-inline-block py-1 px-4 rounded-pill bg-dash-dark-3 fw-light text-sm">410 Contributions</div>
-                  </div>
-                  <div class="col-lg-4">
-                    <ul class="list-inline text-center mb-0 d-flex justify-content-between mb-0 text-sm">                 
-                      <li class="list-inline-item"><i class="fab fa-blogger-b me-2"></i>110</li>
-                      <li class="list-inline-item"><i class="fas fa-code-branch me-2"></i>200</li>
-                      <li class="list-inline-item"><i class="fab fa-gg me-2"></i>100</li>
-                    </ul>
+                    <div class="col-lg-5 text-center d-flex d-flex-inline justify-content-center align-items-center">
+                      <div class="d-inline-block pt-2 px-4 rounded-pill bg-dash-dark-3 fw-light text-sm">
+                        <h4 class=""><span>Bet on : <span class="text-dash-color-3 h4">3</span></span></h4>
+                      </div>
+                      <div class="d-inline-block pt-2 px-4 rounded-pill bg-dash-dark-3 fw-light text-sm">
+                        <h5 class=""><span>Amount : <span class="text-dash-color-3 h4">Rs 300000</span></span></h5>
+                      </div>
+                      <div class="d-inline-block text-dash-dark-3 fw-light text-sm mx-2">
+                        <button class="btn btn-danger text-sm">Ban User</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <ul class="list-inline text-center d-flex justify-content-between align-items-center mb-0 my-auto text-sm">                 
+                        <li class="list-inline-item"><i class="fab fa-blogger-b me-2"></i>110 Played</li>
+                        <li class="list-inline-item"><i class="fas fa-code-branch me-2"></i>90 wins</li>
+                        <li class="list-inline-item">
+                          <div class="d-flex flex-sm-column justify-content-between align-items-center ">
+                            <div class="h2"><i class="fas fa-wallet text-success  me-2"></i>999</div>
+                            <div class="h4 ms-3"><i class="fa fa-bolt text-warning  me-2"></i>100</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-      </div>
-      <div class="col-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="row gy-3 align-items-center">
-                  <div class="col-lg-4">
-                    <div class="d-flex align-items-center"><strong class="text-sm d-none d-lg-block">5th</strong><img class="avatar ms-3" src="img/avatar-2.jpg" alt="Alexander Shelby">
-                      <div class="ms-3">
-                        <h3 class="h5 mb-0">Alexander Shelby</h3>
-                        <p class="text-sm fw-light mb-0">@alexshelby</p>
+        </div>
+
+        {{-- <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row gy-3 align-items-center">
+                    <div class="col-lg-4">
+                      <div class="d-flex align-items-center"><strong class="text-sm d-none d-lg-block">2nd</strong><img class="avatar ms-3" src="img/avatar-2.jpg" alt="Alexander Shelby">
+                        <div class="ms-3">
+                          <h3 class="h5 mb-0">Alexander Shelby</h3>
+                          <p class="text-sm fw-light mb-0">@alexshelby</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4 text-center">
-                    <div class="d-inline-block py-1 px-4 rounded-pill bg-dash-dark-3 fw-light text-sm">320 Contributions</div>
-                  </div>
-                  <div class="col-lg-4">
-                    <ul class="list-inline text-center mb-0 d-flex justify-content-between mb-0 text-sm">                 
-                      <li class="list-inline-item"><i class="fab fa-blogger-b me-2"></i>150</li>
-                      <li class="list-inline-item"><i class="fas fa-code-branch me-2"></i>120</li>
-                      <li class="list-inline-item"><i class="fab fa-gg me-2"></i>50</li>
-                    </ul>
+                    <div class="col-lg-4 text-center">
+                      <div class="d-inline-block py-1 px-4 rounded-pill bg-dash-dark-3 fw-light text-sm">320 Contributions</div>
+                    </div>
+                    <div class="col-lg-4">
+                      <ul class="list-inline text-center mb-0 d-flex justify-content-between mb-0 text-sm">                 
+                        <li class="list-inline-item"><i class="fab fa-blogger-b me-2"></i>150</li>
+                        <li class="list-inline-item"><i class="fas fa-code-branch me-2"></i>120</li>
+                        <li class="list-inline-item"><i class="fab fa-gg me-2"></i>50</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-      </div>
-      <div class="col-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="row gy-3 align-items-center">
-                  <div class="col-lg-4">
-                    <div class="d-flex align-items-center"><strong class="text-sm d-none d-lg-block">6th</strong><img class="avatar ms-3" src="img/avatar-6.jpg" alt="Arther Kooper">
-                      <div class="ms-3">
-                        <h3 class="h5 mb-0">Arther Kooper</h3>
-                        <p class="text-sm fw-light mb-0">@artherkooper</p>
+        </div>
+        <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row gy-3 align-items-center">
+                    <div class="col-lg-4">
+                      <div class="d-flex align-items-center"><strong class="text-sm d-none d-lg-block">3rd</strong><img class="avatar ms-3" src="img/avatar-6.jpg" alt="Arther Kooper">
+                        <div class="ms-3">
+                          <h3 class="h5 mb-0">Arther Kooper</h3>
+                          <p class="text-sm fw-light mb-0">@artherkooper</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4 text-center">
-                    <div class="d-inline-block py-1 px-4 rounded-pill bg-dash-dark-3 fw-light text-sm">170 Contributions</div>
-                  </div>
-                  <div class="col-lg-4">
-                    <ul class="list-inline text-center mb-0 d-flex justify-content-between mb-0 text-sm">                 
-                      <li class="list-inline-item"><i class="fab fa-blogger-b me-2"></i>60</li>
-                      <li class="list-inline-item"><i class="fas fa-code-branch me-2"></i>70</li>
-                      <li class="list-inline-item"><i class="fab fa-gg me-2"></i>40</li>
-                    </ul>
+                    <div class="col-lg-4 text-center">
+                      <div class="d-inline-block py-1 px-4 rounded-pill bg-dash-dark-3 fw-light text-sm">170 Contributions</div>
+                    </div>
+                    <div class="col-lg-4">
+                      <ul class="list-inline text-center mb-0 d-flex justify-content-between mb-0 text-sm">                 
+                        <li class="list-inline-item"><i class="fab fa-blogger-b me-2"></i>60</li>
+                        <li class="list-inline-item"><i class="fas fa-code-branch me-2"></i>70</li>
+                        <li class="list-inline-item"><i class="fab fa-gg me-2"></i>40</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-      </div>
+        </div> --}}
+      </section>
     </div>
   </div>
 </section>
