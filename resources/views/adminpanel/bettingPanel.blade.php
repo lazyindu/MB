@@ -3,18 +3,18 @@
     <head> 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Dark Admin by Bootstrapious.com</title>
+        <title>MB</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="all,follow">
         <!-- Choices.js-->
-        <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.min.css">
+        <link rel="stylesheet" href="{{asset("vendor/choices.js/public/assets/styles/choices.min.css")}}">
         <!-- Google fonts - Muli-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
         <!-- theme stylesheet-->
-        <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+        <link rel="stylesheet" href="{{asset("css/style.default.css")}}" id="theme-stylesheet">
         <!-- Custom stylesheet - for your changes-->
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="{{asset("css/custom.css")}}">
         <!-- Favicon-->
         <link rel="shortcut icon" href="img/favicon.ico">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
@@ -32,13 +32,13 @@
 
     @livewireScripts
         <!-- JavaScript files-->
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="vendor/just-validate/js/just-validate.min.js"></script>
-        <script src="vendor/chart.js/Chart.min.js"></script>
-        <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
-        <script src="js/charts-home.js"></script>
+        <script src="{{asset("vendor/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
+        <script src="{{asset("vendor/just-validate/js/just-validate.min.js")}}"></script>
+        <script src="{{asset("vendor/chart.js/Chart.min.js")}}"></script>
+        <script src="{{asset("vendor/choices.js/public/assets/scripts/choices.min.js")}}"></script>
+        <script src="{{asset("js/charts-home.js")}}"></script>
         <!-- Main File-->
-        <script src="js/front.js"></script>
+        <script src="{{asset("js/front.js")}}"></script>
         <script>
           // ------------------------------------------------------- //
           //   Inject SVG Sprite - 

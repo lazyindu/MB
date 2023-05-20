@@ -131,10 +131,10 @@
                                   <table class="table mb-0 table-striped table-hover">
                                     <thead>
                                         <tr>
-                                            <th>RannDDDii</th>
-                                            <th>RannDDDii</th>
-                                            <th>RannDDDii</th>
-                                            <th>RannDDDii</th>
+                                            <th>Rannjksdkjs</th>
+                                            <th>Rannjksdkjs</th>
+                                            <th>Rannjksdkjs</th>
+                                            <th>Rannjksdkjs</th>
                                         </tr>
                                     </thead>
                                     <tbody>
