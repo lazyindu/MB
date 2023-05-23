@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 use App\Http\Livewire\Admindashboard\BattingRecord;
 use App\Http\Livewire\Admindashboard\HomePage;
 use Illuminate\Support\Facades\Route;
@@ -15,26 +17,39 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('bettingdashboard.homepage');
+// Route::get('/', function () {
+//     return view('bettingdashboard.homepage');
+// }); 
+
+// Route::get('/admin', function () {
+//     return view('adminpanel.bettingPanel');
+// });
+
+// Route::get('/allusers', function () {
+//     return view('adminpanel.allUserListPanel');
+// });
+
+// Route::get('/bettingrecords', function () {
+//     return view('adminpanel.bettingRecordsPanel');
+// });
+
+Route::prefix("admin")->group(function(){
+    Route::controller(AdminController::class)->group(function(){
+        Route::match(["POST","GET"],"/login",'adminlogin')->name('admin.login');
+        // using auth 
+        Route::middleware("auth:admin")->group(function(){
+         Route::get('/dashboard','index')->name('admin.panel');
+        });
+    });
 });
 
-Route::get('/shop', function () {
-    return view('shoppingdashboard.shoppage');
-});
 
-Route::get('/admin', function () {
-    return view('adminpanel.bettingPanel');
-});
-
-Route::get('/allusers', function () {
-    return view('adminpanel.allUserListPanel');
-});
-
-Route::get('/bettingrecords', function () {
-    return view('adminpanel.bettingRecordsPanel');
-});
-
-Route::get('/login', function () {
-    return view('bettingdashboard.userlogin');
+Route::prefix("presell")->group(function(){
+    Route::controller(UserController::class)->group(function(){
+        Route::match(["POST","GET"],"/login",'userlogin')->name('user.login');
+        // using auth 
+        Route::middleware("auth:user")->group(function(){
+         Route::get('/dashboard','index')->name('user.panel');
+        });
+    });
 });
