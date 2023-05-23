@@ -29,9 +29,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('adminpanel.allUserListPanel');
 // });
 
-// Route::get('/bettingrecords', function () {
-//     return view('adminpanel.bettingRecordsPanel');
-// });
+Route::get('/register', function () {
+    return view('bettingdashboard.userRegistration');
+});
 
 Route::prefix("admin")->group(function(){
     Route::controller(AdminController::class)->group(function(){
