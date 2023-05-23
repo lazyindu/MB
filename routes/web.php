@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('bettingdashboard.homepage');
 });
 
+Route::get('/shop', function () {
+    return view('shoppingdashboard.shoppage');
+});
+
 Route::get('/admin', function () {
     return view('adminpanel.bettingPanel');
 });
@@ -29,4 +33,8 @@ Route::get('/allusers', function () {
 
 Route::get('/bettingrecords', function () {
     return view('adminpanel.bettingRecordsPanel');
+});
+
+Route::get('/login', function () {
+    return view('bettingdashboard.userlogin');
 });

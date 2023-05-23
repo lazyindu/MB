@@ -59,7 +59,7 @@
                                             <span class="text-lg">MB Live</span></div>
                                         <div class="justify-content-between d-flex">
                                             <div class="">Period : <span>20230520236</span></div>
-                                                <div class="d-flex flex-column">
+                                                {{-- <div class="d-flex flex-column">
                                                     <div class=" d-flex d-flex-inline">
                                                         <div id="hours">00</div>
                                                         <div>:</div>
@@ -67,16 +67,22 @@
                                                         <div>:</div>
                                                         <div id="seconds">00</div>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                         </div>
                                         <!-- Display -->
                                         <div class="justify-content-center">
                                             <div class="bg-dash-dark-3 m-lg-5 px-3 justify-content-center align-items-center text-center">
-                                                <div class="py-lg-5 py-2 ">
+                                                <div class="py-lg-5 py-2 mx-auto text-center ">
                                                     <div class="">
                                                         <p>    </p>
                                                     </div>
-                                                    <h1 class="display-1">00</h1>
+                                                    <h1 class="mb-3">
+                                                        <span id="hours"></span>
+                                                        <span>:</span>
+                                                        <span id="minutes"></span>
+                                                        <span>:</span>
+                                                        <span id="seconds"></span>
+                                                    </h1>
                                                     <div class="m-0">
                                                         <p>Surround yourself with support - Good luck for next round...</p>
                                                         <p>Please take frequent breaks and play responsibly</p>
@@ -97,12 +103,12 @@
                                                 </div>
                                                 <div class="row my-3 bg-dash-dark-3">
                                                 <div class="col-12 d-block justify-content-between text-center align-items-center">
-                                                    <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice fa-spin fa-spin-reverse text-lg m-2"></i><span class="text-lg"> 1</span></button>
-                                                    <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice fa-spin fa-spin-reverse text-lg m-2"></i><span class="text-lg"> 2</span></button>
-                                                    <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice fa-spin fa-spin-reverse text-lg m-2"></i><span class="text-lg"> 3</span></button>
+                                                    <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice fa-spin fa-spin-reverse text-lg m-2 fa-rotate-90"></i><span class="text-lg"> 1</span></button>
+                                                    <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice fa-spin fa-spin-reverse text-lg m-2 fa-rotate-180"></i><span class="text-lg"> 2</span></button>
+                                                    <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice fa-spin fa-spin-reverse text-lg m-2 fa-rotate-270"></i><span class="text-lg"> 3</span></button>
                                                     <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice fa-spin fa-spin-reverse text-lg m-2"></i><span class="text-lg"> 4</span></button>
-                                                    <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice fa-spin fa-spin-reverse text-lg m-2"></i><span class="text-lg"> 5</span></button>
-                                                    <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice fa-spin fa-spin-reverse text-lg m-2"></i><span class="text-lg"> 6</span></button>
+                                                    <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice text-lg m-2 "></i><span class="text-lg"> 5</span></button>
+                                                    <button class="btn btn-dark mx-lg-4 m-2"><i class="fas fa-dice fa-spin text-lg m-2 "></i><span class="text-lg"> 6</span></button>
                                                 </div>
                                                 </div>
                                             </div>
@@ -232,45 +238,59 @@
     </footer>
 </div>
 <script>
-    // Set the initial countdown duration in seconds
-    var countdownDuration = 1800; // 30 minutes
-
-    // Set the restart duration in seconds
-    var restartDuration = 7200; // 2 hours
-
-    // Start the countdown
-    startCountdown();
-
-    // Function to start the countdown timer
+    // Function to start or resume the countdown timer
     function startCountdown() {
         var hoursElement = document.getElementById("hours");
         var minutesElement = document.getElementById("minutes");
         var secondsElement = document.getElementById("seconds");
 
-        // Update the timer every second
+        // Retrieve the countdown duration from localStorage
+        var countdownDuration = localStorage.getItem("countdownDuration");
+        if (countdownDuration === null) {
+            // If no countdown duration is stored, use the initial value
+            countdownDuration = 1800; // 30 minutes
+        } else {
+            // If countdown duration is stored, parse it as an integer
+            countdownDuration = parseInt(countdownDuration);
+        }
+
+        // Update the timer display
+        updateTimerDisplay();
+
+        // Start the countdown
         var timer = setInterval(function () {
             // Decrease the countdown duration by 1 second
             countdownDuration--;
 
-            // Calculate hours, minutes, and seconds
+            // Update the timer display
+            updateTimerDisplay();
+
+            // If the countdown is over, reset the countdown duration and restart the timer
+            if (countdownDuration <= 0) {
+                countdownDuration = 7200; // 2 hours
+            }
+
+            // Store the updated countdown duration in localStorage
+            localStorage.setItem("countdownDuration", countdownDuration.toString());
+        }, 1000);
+
+        // Function to update the timer display
+        function updateTimerDisplay() {
             var hours = Math.floor(countdownDuration / 3600);
             var minutes = Math.floor((countdownDuration % 3600) / 60);
             var seconds = countdownDuration % 60;
 
-            // Update the timer display
             hoursElement.textContent = padNumber(hours);
             minutesElement.textContent = padNumber(minutes);
             secondsElement.textContent = padNumber(seconds);
+        }
 
-            // If the countdown is over, reset the countdown duration and restart the timer
-            if (countdownDuration <= 0) {
-                countdownDuration = restartDuration;
-            }
-        }, 1000);
+        // Function to pad single-digit numbers with leading zeros
+        function padNumber(number) {
+            return number.toString().padStart(2, "0");
+        }
     }
 
-    // Function to pad single-digit numbers with leading zeros
-    function padNumber(number) {
-        return number.toString().padStart(2, "0");
-    }
+    // Start the countdown
+    startCountdown();
 </script>

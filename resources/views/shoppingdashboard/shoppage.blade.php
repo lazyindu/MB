@@ -27,7 +27,7 @@
 
     
     {{-- Admin Dashboard --}}
-    @livewire("publicdashboard.component.homebase")
+    @livewire("publicdashboard.component.shopbase")
 
     @livewireScripts
         <!-- JavaScript files-->
