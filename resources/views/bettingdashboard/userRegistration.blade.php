@@ -35,29 +35,70 @@
     <div class="page-content form-page justify-content-center align-items-center w-full d-flex">
         <div class="col-lg-6 col-10">
             <div class="card">
-              <div class="card-header">
-                <h3 class="h4 mb-0 text-center">Register</h3>
-              </div>
-              <div class="card-body pt-0">
-                {{-- <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p> --}}
-                <form>
-                  <div class="mb-3">
-                    <label class="form-label" for="exampleInputEmail1">Email address</label>
-                    <input type="email" name="email" value="{{old("email")}}" class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
-                    <div class="form-text" id="emailHelp">We'll never share your email with anyone else.</div>
+                <div class="card-header">
+                    <h3 class="h4 mb-0 text-center">Register</h3>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label" for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" value="{{old("password")}}" class="form-control" id="exampleInputPassword1" type="password">
-                    <div class="form-text" id="emailHelp">Your password is end to end encryted</div>
-                  </div>
-                <div class="mb-3">
-                    <label class="form-label" for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" value="{{old("password")}}" class="form-control" id="exampleInputPassword1" type="password">
-                  </div>
-                  <button class="btn btn-primary" type="submit">Submit</button>
-                </form>
-              </div>
+                <div class="card-body pt-0">
+                    {{-- <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p> --}}
+                    <form>
+                        <div class="mb-3 d-flex w-full  justify-content-between d-grid gap-3">
+                            <div class="col ">
+                                <label class="form-label" for="username">Name</label>
+                                <input type="text" name="name" value="{{ old('name') }}" class="form-control "
+                                    id="username" type="email" aria-describedby="emailHelp">
+
+                                @error('name')
+                                    <p>{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <div class="col">
+                                <label class="form-label" for="username1">User name</label>
+                                <input type="user_name" name="email" value="{{ old('user_name') }}"
+                                    class="form-control" id="username1" type="email" aria-describedby="emailHelp">
+                                <div class="form-text" id="emailHelp">We'll never share your user name with anyone else.
+                                </div>
+                                @error('user_name')
+                                    <p>{{ $message }}</p>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex w-full  justify-content-between d-grid gap-3">
+                            <div class="col">
+                                <label class="form-label" for="exampleInputEmail1">Email address</label>
+                                <input type="email" name="email" value="{{ old('email') }}" class="form-control"
+                                    id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
+                                <div class="form-text" id="emailHelp">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label class="form-label" for="upi">Upi id</label>
+                                <input type="text" name="upi_id" value="{{ old('upi_id') }}" class="form-control"
+                                    id="upi"  >
+                               
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex w-full  justify-content-between d-grid gap-3 ">
+                            <div class="col">
+                                <label class="form-label" for="exampleInputPassword1">Password</label>
+                                <input type="password" name="password" value="{{ old('password') }}"
+                                    class="form-control" id="exampleInputPassword1" type="password">
+                                <div class="form-text" id="emailHelp">Your password is end to end encryted</div>
+                            </div>
+                            <div class="col">
+                                <label class="form-label" for="exampleInputPassword1">Conform Password</label>
+                                <input type="password" name="password" value="{{ old('password') }}"
+                                    class="form-control" id="exampleInputPassword1" type="password">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                    <p className="">
+                        Already have an account? <a href="{{ route('user.login') }}" className="">Login here</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
