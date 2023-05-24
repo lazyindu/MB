@@ -39,19 +39,29 @@
                 {{-- <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p> --}}
                 <form>
                   <div class="mb-3">
-                    <label class="form-label" for="exampleInputEmail1">Email address</label>
-                    <input type="email" name="email" value="{{old("email")}}" class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
-                    <div class="form-text" id="emailHelp">We'll never share your email with anyone else.</div>
+                    <label class="form-label" for="name">Name</label>
+                    <input type="name" name="name" value="{{old("name")}}" class="form-control" id="name">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" value="{{old("password")}}" class="form-control" id="exampleInputPassword1" type="password">
-                    <div class="form-text" id="emailHelp">Your password is end to end encryted</div>
-                  </div>
+                    <label class="form-label" for="upi">Upi ID</label>
+                    <input type="text" name="upi" value="{{old("upi")}}" class="form-control" id="" >
+                </div>
+                <div class="mb-3 d-lg-flex ">
+                    <div class="w-100">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" name="email" value="{{old("email")}}" class="form-control">
+                        <div class="form-text" id="">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="w-100">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" name="password" value="{{old("password")}}" class="form-control">
+                        <div class="form-text" id="upi">Your password is end to end encryted</div>
+                    </div>
+                </div>
                 <div class="mb-3">
-                    <label class="form-label" for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" value="{{old("password")}}" class="form-control" id="exampleInputPassword1" type="password">
-                  </div>
+                        <label class="form-label" for="referral">Referral</label>
+                        <input type="text" name="referral" value="{{old("referral")}}" class="form-control">
+                </div>
                   <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
               </div>

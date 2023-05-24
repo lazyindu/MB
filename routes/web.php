@@ -25,9 +25,11 @@ use Illuminate\Support\Facades\Route;
 //     return view('adminpanel.bettingPanel');
 // });
 
-// Route::get('/allusers', function () {
-//     return view('adminpanel.allUserListPanel');
-// });
+
+
+Route::get('/shop', function () {
+    return view('shoppingdashboard.shopscreen');
+});
 
 Route::get('/register', function () {
     return view('bettingdashboard.userRegistration');

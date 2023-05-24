@@ -18,18 +18,27 @@
         <!-- Favicon-->
         <link rel="shortcut icon" href="img/favicon.ico">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        {{-- start rating style --}}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+        <!-- JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
         <!-- Tweaks for older IEs--><!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-            @livewireStyles
+            
+        @livewireStyles
       </head>
 <body>
 
     
-    {{-- Admin Dashboard --}}
-    @livewire("publicdashboard.component.shopbase")
+        {{-- Admin Dashboard --}}
+        @livewire("publicdashboard.component.shopbase")
 
-    @livewireScripts
+        @livewireScripts
         <!-- JavaScript files-->
         <script src="{{asset("vendor/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
         <script src="{{asset("vendor/just-validate/js/just-validate.min.js")}}"></script>
