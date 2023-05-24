@@ -207,7 +207,7 @@ class Header extends Component
                             <li><a class="dropdown-item" rel="nofollow" href="#"> <img class="me-2" src="img/flags/16/FR.png" alt="English"><span>French                   </span></a></li>
                             </ul>
                         </li>
-                        <li class="list-inline-item logout px-lg-2">                 <a class="nav-link text-sm text-reset px-1 px-lg-0" id="logout" href="login.html"> <span class="d-none d-sm-inline-block">Logout </span>
+                        <li class="list-inline-item logout px-lg-2">                 <a class="nav-link text-sm text-reset px-1 px-lg-0" id="logout" href={{route('admin.logout')}}> <span class="d-none d-sm-inline-block">Logout </span>
                                 <svg class="svg-icon svg-icon-xs svg-icon-heavy">
                                     <use xlink:href="#disable-1"> </use>
                                 </svg></a></li>

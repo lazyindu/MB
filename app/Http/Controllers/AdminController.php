@@ -23,6 +23,11 @@ class AdminController extends Controller
                 return redirect()->back()->with("alert","Please enter valid email or password");
             }
         }
-        return view('adminpanel.adminLogin');
+        return view('adminpanel/adminlogin');
+    }
+    public function adminlogout(Request $req)
+    {
+        Auth::guard("admin")->logout();
+        return redirect()->back();
     }
 }
