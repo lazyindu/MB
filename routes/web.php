@@ -29,9 +29,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('adminpanel.allUserListPanel');
 // });
 
-Route::get('/register', function () {
-    return view('bettingdashboard.userRegistration');
-});
+// Route::get('/register', function () {
+//     return view('bettingdashboard.userRegistration');
+// });
+
 
 Route::prefix("admin")->group(function(){
     Route::controller(AdminController::class)->group(function(){
@@ -39,6 +40,8 @@ Route::prefix("admin")->group(function(){
         // using auth 
         Route::middleware("auth:admin")->group(function(){
          Route::get('/dashboard','index')->name('admin.panel');
+
+         Route::get("/logout",'adminlogout')->name("admin.logout");
         });
     });
 });
@@ -47,9 +50,13 @@ Route::prefix("admin")->group(function(){
 Route::prefix("presell")->group(function(){
     Route::controller(UserController::class)->group(function(){
         Route::match(["POST","GET"],"/login",'userlogin')->name('user.login');
+        Route::match(["POST","GET"],"/register",'userRegister')->name('user.register');
         // using auth 
-        Route::middleware("auth:user")->group(function(){
+        Route::middleware('auth:user')->group(function(){
          Route::get('/dashboard','index')->name('user.panel');
+
+         Route::get("/logout",'userlogout')->name("user.logout");
+
         });
     });
 });

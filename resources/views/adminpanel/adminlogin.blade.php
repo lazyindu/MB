@@ -40,8 +40,8 @@
                 </div>
                 <div class="card-body pt-0">
                     {{-- <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p> --}}
-                    <form action="{{ route('user.login') }}" method="POST">
-                        @csrf
+                    <form method="POST" action="{{ route('admin.login') }}">
+                      @csrf
                         <div class="mb-3">
                             <label class="form-label" for="exampleInputEmail1">Email address</label>
                             <input type="email" name="email" value="{{ old('email') }}" class="form-control"
@@ -55,12 +55,7 @@
                             <div class="form-text" id="emailHelp">Your password is end to end encryted</div>
                         </div>
                         <button class="btn btn-primary" type="submit">Submit</button>
-
                     </form>
-                   
-                  <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                    Don’t have an account yet? <a href="{{ route('user.register') }}" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
-                </p>
                 </div>
             </div>
         </div>

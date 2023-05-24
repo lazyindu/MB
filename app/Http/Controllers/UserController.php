@@ -24,4 +24,16 @@ class UserController extends Controller
         }
         return view('bettingdashboard.userlogin');
     }
+
+    public function userlogout(Request $req)
+    {
+        Auth::guard("presell")->logout();
+        return redirect()->back();
+    }
+    public function userRegister(Request $req){
+        if($req->method()=="POST"){
+            dd("this is working");
+        }
+        return view("bettingdashboard.userRegistration");
+    }
 }
