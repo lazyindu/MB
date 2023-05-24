@@ -53,12 +53,12 @@
                                 @enderror
                             </div>
                             <div class="col">
-                                <label class="form-label" for="username1">User name</label>
-                                <input type="text" name="email" value="{{ old('user_name') }}"
-                                    class="form-control" id="username1" aria-describedby="username1">
-                                <div class="form-text" id="username1">We'll never share your user name with anyone else.
+                                <label class="form-label" for="username">User name</label>
+                                <input type="text" name="username" value="{{ old('username') }}"
+                                    class="form-control" aria-describedby="username">
+                                <div class="form-text" id="username">We'll never share your user name with anyone else.
                                 </div>
-                                @error('user_name')
+                                @error('username')
                                     <p>{{ $message }}</p>
                                 @enderror
                             </div>
@@ -93,19 +93,19 @@
                                 @enderror
                             </div>
                             <div class="col">
-                                <label class="form-label" for="password">Confirm Password</label>
-                                <input type="password" name="password" value="{{ old('password') }}"
-                                    class="form-control" id="password" type="password">
-                                @error('password')
+                                <label class="form-label" for="c_password">Confirm Password</label>
+                                <input type="c_password" name="c_password" value="{{ old('c_password') }}"
+                                    class="form-control" id="c_password">
+                                @error('c_password')
                                     <p>{{ $message }}</p>
                                 @enderror
                             </div>
                         </div>
                         <div class="mb-3 d-flex w-full  justify-content-between d-grid gap-3 ">
                             <div class="col">
-                                <label class="form-label" for="refferal">Refferal</label>
-                                <input type="refferal" name="refferal" value="{{ old('refferal') }}" class="form-control" id="refferal" type="password">
-                                @error('refferal')
+                                <label class="form-label" for="refferal_code">Refferal</label>
+                                <input type="text" name="refferal_code" value="{{ old('refferal_code') }}" class="form-control">
+                                @error('refferal_code')
                                     <p>{{ $message }}</p>
                                 @enderror
                             </div>
