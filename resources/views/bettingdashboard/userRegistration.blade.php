@@ -40,7 +40,8 @@
                 </div>
                 <div class="card-body pt-0">
                     {{-- <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p> --}}
-                    <form>
+                    <form action="{{ route('user.register') }}" method="POST">
+                      @csrf
                         <div class="mb-3 d-flex w-full  justify-content-between d-grid gap-3">
                             <div class="col ">
                                 <label class="form-label" for="name">Name</label>
