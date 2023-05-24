@@ -43,9 +43,9 @@
                     <form>
                         <div class="mb-3 d-flex w-full  justify-content-between d-grid gap-3">
                             <div class="col ">
-                                <label class="form-label" for="username">Name</label>
+                                <label class="form-label" for="name">Name</label>
                                 <input type="text" name="name" value="{{ old('name') }}" class="form-control "
-                                    id="username" type="email" aria-describedby="emailHelp">
+                                    id="name" aria-describedby="name">
 
                                 @error('name')
                                     <p>{{ $message }}</p>
@@ -53,9 +53,9 @@
                             </div>
                             <div class="col">
                                 <label class="form-label" for="username1">User name</label>
-                                <input type="user_name" name="email" value="{{ old('user_name') }}"
-                                    class="form-control" id="username1" type="email" aria-describedby="emailHelp">
-                                <div class="form-text" id="emailHelp">We'll never share your user name with anyone else.
+                                <input type="text" name="email" value="{{ old('user_name') }}"
+                                    class="form-control" id="username1" aria-describedby="username1">
+                                <div class="form-text" id="username1">We'll never share your user name with anyone else.
                                 </div>
                                 @error('user_name')
                                     <p>{{ $message }}</p>
@@ -64,34 +64,50 @@
                         </div>
                         <div class="mb-3 d-flex w-full  justify-content-between d-grid gap-3">
                             <div class="col">
-                                <label class="form-label" for="exampleInputEmail1">Email address</label>
+                                <label class="form-label" for="email">Email address</label>
                                 <input type="email" name="email" value="{{ old('email') }}" class="form-control"
-                                    id="exampleInputEmail1" type="email" aria-describedby="emailHelp">
-                                <div class="form-text" id="emailHelp">We'll never share your email with anyone else.
+                                    id="email" aria-describedby="email">
+                                <div class="form-text" id="email">We'll never share your email with anyone else.
                                 </div>
+                                @error('email')
+                                <p>{{ $message }}</p>
+                                @enderror
                             </div>
                             <div class="col">
                                 <label class="form-label" for="upi">Upi id</label>
-                                <input type="text" name="upi_id" value="{{ old('upi_id') }}" class="form-control"
-                                    id="upi"  >
-                               
+                                <input type="text" name="upi_id" value="{{ old('upi_id') }}" class="form-control"id="upi" />
+                            </div>
+                            @error('upi_id')
+                            <p>{{ $message }}</p>
+                            @enderror
+                        </div>
+                        <div class="mb-3 d-flex w-full  justify-content-between d-grid gap-3 ">
+                            <div class="col">
+                                <label class="form-label" for="password">Password</label>
+                                <input type="password" name="password" value="{{ old('password') }}"
+                                    class="form-control" id="password" type="password">
+                                <div class="form-text" id="emailHelp">Your password is end to end encryted</div>
+                                @error('password')
+                                    <p>{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <div class="col">
+                                <label class="form-label" for="password">Confirm Password</label>
+                                <input type="password" name="password" value="{{ old('password') }}"
+                                    class="form-control" id="password" type="password">
+                                @error('password')
+                                    <p>{{ $message }}</p>
+                                @enderror
                             </div>
                         </div>
                         <div class="mb-3 d-flex w-full  justify-content-between d-grid gap-3 ">
                             <div class="col">
-                                <label class="form-label" for="exampleInputPassword1">Password</label>
-                                <input type="password" name="password" value="{{ old('password') }}"
-                                    class="form-control" id="exampleInputPassword1" type="password">
-                                <div class="form-text" id="emailHelp">Your password is end to end encryted</div>
+                                <label class="form-label" for="refferal">Refferal</label>
+                                <input type="refferal" name="refferal" value="{{ old('refferal') }}" class="form-control" id="refferal" type="password">
+                                @error('refferal')
+                                    <p>{{ $message }}</p>
+                                @enderror
                             </div>
-                            <div class="col">
-                                <label class="form-label" for="exampleInputPassword1">Conform Password</label>
-                                <input type="password" name="password" value="{{ old('password') }}"
-                                    class="form-control" id="exampleInputPassword1" type="password">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-
                         </div>
                         <button class="btn btn-primary" type="submit">Submit</button>
                     </form>
