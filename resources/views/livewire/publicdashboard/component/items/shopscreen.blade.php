@@ -219,18 +219,82 @@
         <!--===========================    Cards   ==============================-->
             <!--  Card 1 -->
             <div class="col-lg-5 col-12">
-                <div class="mb-3">
+                <div class="mb-3 rounded-lg overflow-hidden">
                     <img src="{{asset("mbimages/shop/1.webp")}}" class="w-100"/>
                 </div>
             </div>
-            <div class="col-lg-6 col-6">
+            <div class="col-lg-6 col-12">
                 <div class="mb-3">
-                    <div class=""><h5>Scintillare by Sukkhi </h5></div>
+                    <div class=""><span class="rounded-pill bg-dash-dark-2 px-2 py-1">rounded-pill bg-dash-dark-2</span></div>
                     <div class=""><h4>Splendid Gold Plated Multi Layered Necklace for Women Gold-plated Plated Alloy Necklace </h4></div>
-                    <div class=""><h3>₹524 ₹997 47% off i </h3></div>
-                    <div class=" d-flex d-flex-inline"> <span class="rounded-pill bg-success d-flex text-center align-items-center justify-content-center px-3 py-1 text-white  "><span class="text-lg me-2">4.6</span> <i class="fas fa-star"></i></span>   </div>
+                    <div class=""><span><h3>₹524</h3></span> <span><del>₹997</del></span> <span class="mx-2">47% off</span></div>
+                    <div class="d-flex d-flex-inline">
+                    <span class="rounded-pill bg-success d-flex text-center align-items-center justify-content-center px-3 py-1 text-white  ">
+                        <span class="text-md me-2">4.6</span> 
+                        <i class="fas fa-star" style="font-size:12px;"></i>
+                    </span> 
+                        <span class="text-center mt-1 ms-2">
+                            <span class="me-1">12 ratings</span>
+                            <span class="me-1">and</span>
+                            <span class="me-1">23 reviews</span> 
+                        </span> 
+                    </div>
                 </div>
-                <div class=""><h1>Sold Out</h1></div>
+                <div class="mt-lg-5 "><h1>Sold Out</h1></div>
+                <div class="text-dash-color-3"><h2>Currently out of stock</h2></div>
+                <div class="mt-lg-5">
+                    <span><button class="btn btn-danger">Add to Cart <i class="fas fa-shopping-cart"></i></button></span>
+                    <span><button class="btn btn-warning disabled">Buy Now</button></span>
+                </div>
+            </div>
+            <div class="pt-5 pb-3">
+                <span><h3>Product specification</h3></span>
+            </div>
+            <div class="col-lg-12 justify-content-center align-items-center text-center">
+                <div class="mb-3">
+                    <div>
+                        <table class="table ">
+                            <tbody>
+                                <tr>
+                                    <th>Brand</th>
+                                    <td>Ananth Jewels</td>
+                                </tr>
+                                <tr>
+                                    <th>Collection</th>
+                                    <td>Ananth Jewels 925 Silver BIS Hallmark Collection</td>
+                                </tr>
+                                <tr>
+                                    <th>Stone</th>
+                                    <td>Cubic Zirconia</td>
+                                </tr>
+                                <tr>
+                                    <th>Resizable?</th>
+                                    <td>Y</td>
+                                </tr>
+                                <tr>
+                                    <th>Item Height</th>
+                                    <td>23 Centimeters</td>
+                                </tr>
+                                <tr>
+                                    <th>Item Length</th>
+                                    <td>7.87 Inches</td>
+                                </tr>
+                                <tr>
+                                    <th>Material</th>
+                                    <td>Brass</td>
+                                </tr>
+                                <tr>
+                                    <th>Metal</th>
+                                    <td>Brass</td>
+                                </tr>
+                                <tr>
+                                    <th>Model Number</th>
+                                    <td>2191NGLDPP1560</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
             <!--  u---u   -->
