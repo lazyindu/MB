@@ -239,6 +239,10 @@
                             <span class="me-1">23 reviews</span> 
                         </span> 
                     </div>
+                    <div class="">
+                        <div class="mx-2 mt-2 text-success d-flex w-100 d-flex-inline gap-2 text-center"> <i class="fas fa-tag "></i> <h5>Offers</h5></div>
+                        <span class="mx-2"><h4>Combo Offer</h4></span> Buy 2 items save 5%; Buy 3 or more save 10%
+                    </div>
                 </div>
                 <div class="mt-lg-5 "><h1>Sold Out</h1></div>
                 <div class="text-dash-color-3"><h2>Currently out of stock</h2></div>
